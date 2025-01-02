@@ -1,0 +1,49 @@
+/* Styles for NavBar Links */
+.nav-link {
+    position: relative;
+    text-decoration: none;
+    color: #d1d5db; /* Default gray color */
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 5px 10px;
+    border: 2px solid transparent; /* For border effects */
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .nav-link i {
+    font-size: 1.2rem; /* Icon size */
+    transition: transform 0.3s ease-in-out; /* Icon animations */
+  }
+  
+  .nav-link:hover,
+  .nav-link:focus {
+    color: #ffffff; /* Change text color on hover */
+    background-color: #1a202c; /* Dark background */
+    border: 2px solid #590699; /* Green border on hover */
+  }
+  
+  .nav-link:hover i,
+  .nav-link:focus i {
+    transform: scale(1.2); /* Enlarge icon on hover */
+  }
+  
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: #590699; /* Green underline */
+    transition: width 0.3s ease-in-out;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link:focus::after {
+    width: 100%; /* Full-width underline on hover */
+  }
+  

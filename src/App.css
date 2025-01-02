@@ -1,0 +1,111 @@
+/* Styled Buttons */
+.button {
+  height: 60px; /* Increased height for larger buttons */
+  width: 200px; /* Increased width for larger buttons */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.button:hover {
+  box-shadow: 0.5px 0.5px 100px rgba(0, 0, 0, 0.5); /* Adjusted shadow for hover effect */
+}
+
+/* Admin Dashboard Button */
+.type1::after {
+  content: "Start Now";
+  height: 60px;
+  width: 200px;
+  background-color: #023a71; /* Darker shade for hover */
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(60px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1::before {
+  content: "Admin Dashboard";
+  height: 60px;
+  width: 200px;
+  background-color: #1e4abc; /* Original color */
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type1:hover::after {
+  transform: translateY(0) scale(1.2);
+  background-color: #023a71; /* Slightly darker shade for hover */
+}
+
+.type1:hover::before {
+  transform: translateY(-60px) scale(0) rotate(120deg);
+}
+
+/* User Dashboard Button */
+.type2::after {
+  content: "Start Now";
+  height: 60px;
+  width: 200px;
+  background-color: #300661; /* Darker shade for hover */
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(60px);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type2::before {
+  content: "User Dashboard";
+  height: 60px;
+  width: 200px;
+  background-color: #3d119c; /* Original color */
+  color: #fff;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  transform: translateY(0px) scale(1.2);
+  font-size: 1.2rem;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-in-out;
+}
+
+.type2:hover::after {
+  transform: translateY(0) scale(1.2);
+  background-color: #300661; /* Slightly darker shade for hover */
+}
+
+.type2:hover::before {
+  transform: translateY(-60px) scale(0) rotate(120deg);
+}
