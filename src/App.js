@@ -29,7 +29,7 @@ const App = () => {
                 className="h-screen flex items-center justify-center bg-cover bg-center text-white text-center"
                 style={{
                   backgroundImage: "url('/anima3.gif')",
-                }}
+                }} 
               >
                 <div className="bg-black bg-opacity-50 p-8 rounded-lg space-y-6">
                   <h1 className="text-4xl font-bold">
