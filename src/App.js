@@ -55,7 +55,7 @@ const App = () => {
             }
           />
 
-          {/* Admin Module */}
+          {/* Admin Module */} 
           <Route path="/admin" element={<AdminLayout />}>
             <Route path="overview" element={<CompanyOverview />} />
             <Route path="manage-company" element={<ManageCompany />} />
